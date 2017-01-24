@@ -1,12 +1,3 @@
-AllCops:
-  Exclude:
-    - bin/**/*
-    - db/seeds.rb
-    - db/**/*
-    - deploy/**/*
-    - vendor/**/*
-    - lib/migrate/**/*
-
 Rails:
   Enabled: true
 
@@ -16,8 +7,6 @@ Metrics/MethodLength:
   Max: 20
 Metrics/ClassLength:
   Max: 220
-  Exclude:
-    - app/models/catch.rb
 
 Metrics/AbcSize:
   Max: 35
@@ -36,7 +25,6 @@ Style/BlockDelimiters:
 # environment configs tend to get long
 Metrics/BlockLength:
   Exclude:
-    - 'config/environments/**/*'
     - 'spec/**/*'
 
 Style/TrailingCommaInLiteral:
