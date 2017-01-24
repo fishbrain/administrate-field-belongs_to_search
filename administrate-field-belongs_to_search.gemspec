@@ -1,4 +1,6 @@
-$LOAD_PATH.push File.expand_path('../lib', __FILE__)
+# coding: utf-8
+lib = File.expand_path('../lib', __FILE__)
+$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |gem|
   gem.name = 'administrate-field-belongs_to_search'
@@ -9,8 +11,8 @@ Gem::Specification.new do |gem|
   gem.summary = 'Plugin that adds search capabilities to belongs_to associations for Administrate'
   gem.license = 'MIT'
 
-  gem.require_paths = ['lib']
-  gem.files = `git ls-files`.split('\n')
+  gem.require_paths = %w(lib)
+  gem.files = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   gem.test_files = `git ls-files -- {test,spec,features}/*`.split('\n')
 
   gem.add_dependency 'administrate', '>= 0.3.0'
