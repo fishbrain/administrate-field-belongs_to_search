@@ -1,0 +1,43 @@
+AllCops:
+  Exclude:
+    - bin/**/*
+    - db/seeds.rb
+    - db/**/*
+    - deploy/**/*
+    - vendor/**/*
+    - lib/migrate/**/*
+
+Rails:
+  Enabled: true
+
+Metrics/LineLength:
+  Max: 120
+Metrics/MethodLength:
+  Max: 20
+Metrics/ClassLength:
+  Max: 220
+  Exclude:
+    - app/models/catch.rb
+
+Metrics/AbcSize:
+  Max: 35
+
+Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# allow multiline `expect { ... }.to do_something`
+Style/BlockDelimiters:
+  Exclude:
+    - 'spec/**/*'
+
+# environment configs tend to get long
+Metrics/BlockLength:
+  Exclude:
+    - 'config/environments/**/*'
+    - 'spec/**/*'
+
+Style/TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: comma
