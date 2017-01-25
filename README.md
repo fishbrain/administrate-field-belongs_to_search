@@ -39,7 +39,7 @@ bundle exec rake
 
 Then, implement your feature/fix, [write a good commit message](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
 and submit a pull request to this repository. If you only have some feedback or are unsure about how to do something, you're welcome to
-submit an [issue](issues/new).
+submit an [issue](https://github.com/fishbrain/administrate-field-belongs_to_search/issues/new).
 
 ## License
 
