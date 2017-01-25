@@ -5,8 +5,8 @@ module Administrate
   module Field
     class BelongsToSearch < Administrate::Field::BelongsTo
       class Engine < ::Rails::Engine
-        Engine.config.assets.precompile << 'belongs_to_search.js'
-        Administrate::Engine.add_javascript 'belongs_to_search.js'
+        config.assets.precompile << 'belongs_to_search.js' if config.respond_to? :assets
+        Administrate::Engine.add_javascript 'belongs_to_search.js' if defined?(Administrate::Engine)
       end
 
       def associated_resource_options
