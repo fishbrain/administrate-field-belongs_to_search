@@ -23,8 +23,23 @@ class PostDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
     author: Field::BelongsToSearch.with_options(class_name: 'User')
   }
-end
+# ...
 ```
+
+With this, you should be good to go!
+
+## Develop and contribute
+
+Fork and clone the repo. Install dependencies and run test using:
+
+```sh
+bundle install
+bundle exec rake
+```
+
+Then, implement your feature/fix, [write a good commit message](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
+and submit a pull request to this repository. If you only have some feedback or are unsure about how to do something, you're welcome to
+submit an [issue](issues/new).
 
 ## License
 
