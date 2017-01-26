@@ -53,4 +53,4 @@ This plugin is maintained by [Fishbrain AB](https://fishbrain.com).
 
 At Fishbrain, we're passionate about the outdoors and conservation. Together, we work to bring you the best app for fishing, hands down.
 
-If you love working with amazing and talented people in tight-knit teams, [come work with us](https://fishbrain.com/jobs/)!
+If you love working with amazing and talented people in tight-knit teams, [join us](https://fishbrain.com/jobs/)!
