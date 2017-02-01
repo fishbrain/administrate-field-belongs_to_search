@@ -22,7 +22,7 @@ Style/BlockDelimiters:
   Exclude:
     - 'spec/**/*'
 
-# environment configs tend to get long
+# specs tend to get long
 Metrics/BlockLength:
   Exclude:
     - 'spec/**/*'
