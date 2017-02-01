@@ -10,11 +10,15 @@ module Administrate
       end
 
       def associated_resource_options
-        [[display_candidate_resource(data), data.id]]
+        if data.nil?
+          []
+        else
+          [[display_candidate_resource(data), data.id]]
+        end
       end
 
       def associated_class
-        data.class
+        super
       end
     end
   end
