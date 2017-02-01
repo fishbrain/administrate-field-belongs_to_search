@@ -15,6 +15,14 @@ RSpec.describe Administrate::Field::BelongsToSearch do
     it 'return the proper class for an association' do
       expect(field.associated_class).to eq Author
     end
+
+    context 'when association data is nil' do
+      let(:field) { Administrate::Field::BelongsToSearch.new(:author, nil, page) }
+
+      it 'should return the proper class' do
+        expect(field.associated_class).to eq Author
+      end
+    end
   end
 
   describe '#associated_resource_options' do
@@ -31,6 +39,14 @@ RSpec.describe Administrate::Field::BelongsToSearch do
       selected = field.associated_resource_options.first
       expect(selected.first).to be_a String
       expect(selected.second).to eq post.author.id
+    end
+
+    context 'when association data is nil' do
+      let(:field) { Administrate::Field::BelongsToSearch.new(:author, nil, page) }
+
+      it 'should return an empty array' do
+        expect(field.associated_resource_options).to eq []
+      end
     end
   end
 end

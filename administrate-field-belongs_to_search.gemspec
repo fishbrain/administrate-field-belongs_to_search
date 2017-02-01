@@ -2,11 +2,9 @@
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
-require 'administrate/field/belongs_to_search/version'
-
 Gem::Specification.new do |gem|
   gem.name = 'administrate-field-belongs_to_search'
-  gem.version = Administrate::Field::BelongsToSearch::VERSION
+  gem.version = '0.1.0'.freeze
   gem.authors = ['Klas Eskilson']
   gem.email = ['klas.eskilson@gmail.com']
   gem.homepage = 'https://github.com/fishbrain/administrate-field-belongs_to_search'
