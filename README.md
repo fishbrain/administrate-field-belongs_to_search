@@ -1,5 +1,7 @@
 # Administrate::Field::BelongsToSearch
 
+[![Build Status](https://travis-ci.org/fishbrain/administrate-field-belongs_to_search.svg?branch=master)](https://travis-ci.org/fishbrain/administrate-field-belongs_to_search)
+
 A plugin to search through `belongs_to` associations in [thoughtbot's Administrate](https://github.com/thoughtbot/administrate) Rails engine.
 
 ## Usage
