@@ -12,8 +12,8 @@ Gem::Specification.new do |gem|
   gem.license = 'MIT'
 
   gem.require_paths = %w(lib)
-  gem.files = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  gem.test_files = `git ls-files -- {test,spec,features}/*`.split('\n')
+  gem.files = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(spec)/}) }
+  gem.test_files = `git ls-files -z -- {spec}/*`.split("\x0")
 
   gem.add_dependency 'administrate', '>= 0.3.0'
   gem.add_dependency 'rails', '>= 4.2'
