@@ -1,6 +1,7 @@
 # Administrate::Field::BelongsToSearch
 
 [![Build Status](https://travis-ci.org/fishbrain/administrate-field-belongs_to_search.svg?branch=master)](https://travis-ci.org/fishbrain/administrate-field-belongs_to_search)
+[![Gem Version](https://badge.fury.io/rb/administrate-field-belongs_to_search.svg)](https://badge.fury.io/rb/administrate-field-belongs_to_search)
 
 A plugin to search through `belongs_to` associations in [thoughtbot's Administrate](https://github.com/thoughtbot/administrate) Rails engine.
 
@@ -46,6 +47,10 @@ submit an [issue](https://github.com/fishbrain/administrate-field-belongs_to_sea
 ## License
 
 This plugin is Copyright © 2017 Fishbrain AB. It is licensed under the MIT license. See [LICENSE](LICENSE) for details.
+
+## Screenshot
+
+![Screenshot](http://i.imgur.com/4GlEJ6O.png)
 
 ========
 
