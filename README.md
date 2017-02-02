@@ -9,7 +9,7 @@ A plugin to search through `belongs_to` associations in [thoughtbot's Administra
 Add it to your `Gemfile`:
 
 ```ruby
-gem 'administrate-field-belongs_to_search', git: 'https://github.com/fishbrain/administrate-field-belongs_to_search.git'
+gem 'administrate-field-belongs_to_search', '~> 0.1.2'
 ```
 
 Run bundler to install:
