@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/fishbrain/administrate-field-belongs_to_search.svg?branch=master)](https://travis-ci.org/fishbrain/administrate-field-belongs_to_search)
 [![Gem Version](https://badge.fury.io/rb/administrate-field-belongs_to_search.svg)](https://badge.fury.io/rb/administrate-field-belongs_to_search)
+[![Coverage Status](https://coveralls.io/repos/github/fishbrain/administrate-field-belongs_to_search/badge.svg?branch=master)](https://coveralls.io/github/fishbrain/administrate-field-belongs_to_search?branch=master)
 
 A plugin to search through `belongs_to` associations in [thoughtbot's Administrate](https://github.com/thoughtbot/administrate) Rails engine.
 
