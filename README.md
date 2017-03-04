@@ -11,7 +11,7 @@ A plugin to search through `belongs_to` associations in [thoughtbot's Administra
 Add it to your `Gemfile`:
 
 ```ruby
-gem 'administrate-field-belongs_to_search', '~> 0.1.2'
+gem 'administrate-field-belongs_to_search'
 ```
 
 Run bundler to install:

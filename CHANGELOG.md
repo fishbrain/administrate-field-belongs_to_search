@@ -2,6 +2,11 @@
 
 ## Upcoming release
 
+## 0.1.3
+
+* Support Administrate 0.4.0
+* Add assets in initializer
+
 ## 0.1.2
 
 * Re-push unbroken 0.1.1
