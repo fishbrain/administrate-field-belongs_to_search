@@ -1,4 +1,5 @@
 # coding: utf-8
+
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
@@ -15,7 +16,7 @@ Gem::Specification.new do |gem|
   gem.files = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(spec)/}) }
   gem.test_files = `git ls-files -z -- {spec}/*`.split("\x0")
 
-  gem.add_dependency 'administrate', '>= 0.3', '< 0.5'
+  gem.add_dependency 'administrate', '>= 0.3', '< 0.6'
   gem.add_dependency 'rails', '>= 4.2', '< 5.1'
   gem.add_dependency 'selectize-rails', '~> 0.6'
 
@@ -28,6 +29,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'sqlite3', '~> 1.3'
 
   gem.description = <<-DESCRIPTION
-Add support to search through (potentially large) belongs_to associations in your Administrate dashboards.
+  Add support to search through (potentially large) belongs_to associations in your Administrate dashboards.
   DESCRIPTION
 end

@@ -7,5 +7,5 @@ rvm:
 cache: bundler
 install: bundle install
 script:
-  - bundle exec rubocop
+  - bundle exec rubocop -D
   - bundle exec rake
