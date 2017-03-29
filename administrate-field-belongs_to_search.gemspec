@@ -1,4 +1,5 @@
 # coding: utf-8
+
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
@@ -28,6 +29,6 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'sqlite3', '~> 1.3'
 
   gem.description = <<-DESCRIPTION
-Add support to search through (potentially large) belongs_to associations in your Administrate dashboards.
+  Add support to search through (potentially large) belongs_to associations in your Administrate dashboards.
   DESCRIPTION
 end
