@@ -12,7 +12,7 @@ Gem::Specification.new do |gem|
   gem.summary = 'Plugin that adds search capabilities to belongs_to associations for Administrate'
   gem.license = 'MIT'
 
-  gem.require_paths = %w(lib)
+  gem.require_paths = %w[lib]
   gem.files = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(spec)/}) }
   gem.test_files = `git ls-files -z -- {spec}/*`.split("\x0")
 
