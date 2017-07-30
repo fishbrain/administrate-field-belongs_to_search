@@ -16,8 +16,8 @@ Gem::Specification.new do |gem|
   gem.files = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(spec)/}) }
   gem.test_files = `git ls-files -z -- {spec}/*`.split("\x0")
 
-  gem.add_dependency 'administrate', '>= 0.3', '< 0.7'
-  gem.add_dependency 'rails', '>= 4.2', '< 5.1'
+  gem.add_dependency 'administrate', '>= 0.3', '< 1.0'
+  gem.add_dependency 'rails', '>= 4.2', '< 5.2'
   gem.add_dependency 'selectize-rails', '~> 0.6'
 
   gem.add_development_dependency 'coveralls', '~> 0'
