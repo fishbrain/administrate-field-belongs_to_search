@@ -27,5 +27,9 @@ Metrics/BlockLength:
   Exclude:
     - 'spec/**/*'
 
+Rails/ApplicationRecord:
+  Exclude:
+    - 'spec/**/*'
+
 Style/TrailingCommaInLiteral:
   EnforcedStyleForMultiline: comma
