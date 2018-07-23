@@ -31,5 +31,8 @@ Rails/ApplicationRecord:
   Exclude:
     - 'spec/**/*'
 
-Style/TrailingCommaInLiteral:
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInArrayLiteral:
   EnforcedStyleForMultiline: comma
