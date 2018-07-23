@@ -2,6 +2,12 @@
 
 ## Upcoming release
 
+## 0.5.0
+
+* [#14](https://github.com/fishbrain/administrate-field-belongs_to_search/pull/14) Fix a broken instance var from administrate (thanks @Mrjaco12 and @lhoBas)
+* CI related fixes (add Ruby 2.5)
+* Minor rubocop related tweaks
+
 ## 0.4.0
 
 * [#12](https://github.com/fishbrain/administrate-field-belongs_to_search/pull/12) Loosen version constraints for Administrate and Rails (thanks @dan-ding)
