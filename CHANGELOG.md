@@ -2,6 +2,10 @@
 
 ## Upcoming release
 
+## 0.6.0
+
+* Include Jbuilder in list of dependencies (closes #15)
+
 ## 0.5.0
 
 * [#14](https://github.com/fishbrain/administrate-field-belongs_to_search/pull/14) Fix a broken instance var from administrate (thanks @Mrjaco12 and @lhoBas)
