@@ -23,7 +23,7 @@ Gem::Specification.new do |gem|
   gem.add_development_dependency 'factory_girl', '~> 4.8'
   gem.add_development_dependency 'rake', '~> 12.0'
   gem.add_development_dependency 'rspec', '~> 3.4'
-  gem.add_development_dependency 'rubocop', '~> 0'
+  gem.add_development_dependency 'rubocop', '0.49.0'
   gem.add_development_dependency 'simplecov', '~> 0'
   gem.add_development_dependency 'sqlite3', '~> 1.3'
 
