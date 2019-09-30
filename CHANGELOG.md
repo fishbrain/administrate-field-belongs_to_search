@@ -2,6 +2,8 @@
 
 ## Upcoming release
 
+* Loosen dependency version requirements
+
 ## 0.6.0
 
 * Include Jbuilder in list of dependencies (closes #15)
