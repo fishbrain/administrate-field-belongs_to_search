@@ -7,13 +7,12 @@ on:
   push:
     branches: ["master", "main"]
   schedule:
-    - cron: '0 2 * * 0' # scheduled for 02:00 UTC every day except Sunday
+    - cron: '0 2 * * 1-6' # scheduled for 02:00 UTC every day except Sunday
 
 jobs:
   semgrep:
     name: Scan
     runs-on: ubuntu-latest
-    timeout-minutes: 15 # There's been issues with some runs hanging. This times out after 15 minutes instead of the default 360.
     container:
       image: returntocorp/semgrep
     if: (github.actor != 'dependabot[bot]')
