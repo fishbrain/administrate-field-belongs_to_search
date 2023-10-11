@@ -4,10 +4,8 @@
 name: Semgrep
 on:
   pull_request: {}
-  push:
-    branches: ["master", "main"]
   schedule:
-    - cron: '0 2 * * 0' # scheduled for 02:00 UTC every day except Sunday
+    - cron: '0 2 * * 0' # Once a week at 2am.
 
 jobs:
   semgrep:
