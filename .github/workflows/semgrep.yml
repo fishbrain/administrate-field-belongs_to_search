@@ -10,7 +10,7 @@ on:
 jobs:
   semgrep:
     name: Scan
-    runs-on: ubuntu-latest
+    runs-on: buildjet-2vcpu-ubuntu-2204
     timeout-minutes: 15 # There's been issues with some runs hanging. This times out after 15 minutes instead of the default 360.
     container:
       image: returntocorp/semgrep
