@@ -16,7 +16,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency 'administrate', '>= 0.3', '< 1.0'
   gem.add_dependency 'jbuilder', '~> 2'
-  gem.add_dependency 'rails', '>= 4.2', '< 7.1'
+  gem.add_dependency 'rails', '>= 4.2', '< 7.2'
   gem.add_dependency 'selectize-rails', '~> 0.6'
 
   gem.add_development_dependency 'coveralls', '~> 0'
