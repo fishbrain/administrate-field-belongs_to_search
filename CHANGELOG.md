@@ -2,6 +2,10 @@
 
 ## Upcoming release
 
+## 0.9.0
+
+* Loosen dependency version requirements eeeven further
+
 ## 0.8.0
 
 * Loosen dependency version requirements even further
