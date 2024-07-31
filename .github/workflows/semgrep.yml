@@ -3,20 +3,27 @@
 ######################################################################################################################
 name: Semgrep
 on:
+  workflow_dispatch: {}
   pull_request: {}
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - .github/workflows/semgrep.yml
   schedule:
-    - cron: '0 2 * * 0' # Once a week at 2am.
+    - cron: "0 2 * * 0" # Once a week at 2am.
 
 jobs:
   semgrep:
     name: Scan
     runs-on: warp-ubuntu-latest-x64-2x
     timeout-minutes: 15 # There's been issues with some runs hanging. This times out after 15 minutes instead of the default 360.
+    env:
+      SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
     container:
-      image: returntocorp/semgrep
+      image: semgrep/semgrep
     if: (github.actor != 'dependabot[bot]')
     steps:
       - uses: actions/checkout@v4
       - run: semgrep ci
-        env:
-          SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
