@@ -25,7 +25,7 @@ Add it to your Administrate dashboard, for instance:
 ```ruby
 class PostDashboard < Administrate::BaseDashboard
   ATTRIBUTE_TYPES = {
-    author: Field::BelongsToSearch.with_options(class_name: 'User')
+    author: Field::BelongsToSearch
   }
 # ...
 ```
