@@ -22,6 +22,10 @@ module Administrate
       def associated_class
         super
       end
+
+      def dashboard
+        "#{associated_class}Dashboard".constantize.new
+      end
     end
   end
 end
