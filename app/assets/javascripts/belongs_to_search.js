@@ -1,5 +1,5 @@
 // belongs_to form
-$(function() {
+$(document).on('ready page:load turbolinks:load turbo:load cocoon:after-insert', function() {
   $(".field-unit--belongs-to-search select").each(function initializeSelectize(index, element) {
     var $element = $(element);
     $element.selectize({
