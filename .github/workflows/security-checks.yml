@@ -21,11 +21,11 @@ jobs:
     timeout-minutes: 12
     steps:
       - name: Scan for secrets
-        uses: fishbrain/shared-workflows/secrets-scan@c364c135f00dc9a2418f04e7ae891195149a5cac #v1.4.0
+        uses: fishbrain/shared-workflows/secrets-scan@80296b1c57dc7235360962bc9fcbc25c27de08d2 #v1.4.1
   static-analysis:
     name: Static analysis
     runs-on: warp-ubuntu-latest-x64-2x
     timeout-minutes: 15
     steps:
       - name: Run SAST
-        uses: fishbrain/shared-workflows/static-analysis@c364c135f00dc9a2418f04e7ae891195149a5cac #v1.4.0
+        uses: fishbrain/shared-workflows/static-analysis@80296b1c57dc7235360962bc9fcbc25c27de08d2 #v1.4.1
