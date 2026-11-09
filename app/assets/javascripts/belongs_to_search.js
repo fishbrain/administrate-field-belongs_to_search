@@ -1,5 +1,5 @@
 // belongs_to form
-$(function() {
+function install() {
   $(".field-unit--belongs-to-search select").each(function initializeSelectize(index, element) {
     var $element = $(element);
     $element.selectize({
@@ -25,4 +25,10 @@ $(function() {
       },
     });
   });
-});
+};
+
+if (window.Turbo) {
+  addEventListener("turbo:load", install)
+} else {
+  $(install)
+}
