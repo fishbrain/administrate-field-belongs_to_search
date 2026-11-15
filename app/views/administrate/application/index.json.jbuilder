@@ -18,6 +18,9 @@
 # [1]: http://www.rubydoc.info/gems/administrate/Administrate/Page/Collection
 
 json.resources resources do |resource|
+  @dashboard.search_attributes.each do |attr|
+    json.set! attr, resource.public_send(attr).to_s
+  end
   json.id resource.id
   json.dashboard_display_name @dashboard.display_resource(resource)
 end
